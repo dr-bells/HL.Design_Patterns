@@ -6,7 +6,7 @@ namespace Design_Patterns.DoorFitter
     {
         public void GetDescription()
         {
-            Console.WriteLine("I can only fit wooden doors");
+            Console.WriteLine("I am a Carpenter and l can only fit wooden doors");
         }
     }
 }
