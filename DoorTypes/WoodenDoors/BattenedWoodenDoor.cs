@@ -1,6 +1,6 @@
 using System;
 
-namespace Design_Patterns.DoorMaker.WoodenDoors
+namespace Design_Patterns.DoorMakers.WoodenDoors
 {
     class BattenedWoodenDoor : Door
     {

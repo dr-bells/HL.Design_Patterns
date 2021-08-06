@@ -1,11 +1,11 @@
 using System;
 
-namespace Design_Patterns.DoorMaker.WoodenDoors
+namespace Design_Patterns.DoorMakers.WoodenDoors
 {
-    class FrenchBattenedDoor : BattenedDecorator
+    class LedgedBattenedDoor : BattenedDecorator
     {
         Door _door;
-        public FrenchBattenedDoor(Door door)
+        public LedgedBattenedDoor(Door door)
         {
             this._door = door;
         }
@@ -14,23 +14,23 @@ namespace Design_Patterns.DoorMaker.WoodenDoors
         {
             get
             {
-                if (_door.Description.StartsWith("French"))
+                if (_door.Description.StartsWith("Ledged"))
                 {
                     return "Double " + _door.Description;
                 }
                 else
-                    return "French " + _door.Description;
+                    return "Ledged " + _door.Description;
             }
         }
 
         public override int Cost()
         {
-            return 50 + _door.Cost();
+            return 25 + _door.Cost();
         }
 
         public override void GetDescription()
         {
-            Console.WriteLine("This is a French Decorated Battened Wooden door.");
+            Console.WriteLine("This is a Ledged Decorated Battened Wooden door.");
 
         }
     }

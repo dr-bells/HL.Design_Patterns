@@ -1,21 +1,18 @@
 using Design_Patterns.Door;
 using Design_Patterns.DoorFitter;
-using Design_Patterns.DoorMaker.WoodenDoors;
-using Design_Patterns.DoorMaker;
+using Design_Patterns.DoorMakers;
 
 namespace Design_Patterns.DoorFactory
 {
     public class WoodenDoorFactory : IDoorFactory
     {
+        DoorMaker doormaker = new DoorMaker();
         public IDoor MakeDoor()
         {
+            doormaker.MakeWoodenDoor();
             return new WoodenDoor();
         }
 
-        public IDoor MakeDoor(string type)
-        {
-            return new WoodenDoor(type);
-        }
 
         public IDoorFittingExpert MakeFittingExpert()
         {

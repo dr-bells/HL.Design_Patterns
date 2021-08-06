@@ -1,4 +1,4 @@
-namespace Design_Patterns.DoorMaker.WoodenDoors
+namespace Design_Patterns.DoorMakers.WoodenDoors
 {
     abstract class BattenedDecorator : Door
     {

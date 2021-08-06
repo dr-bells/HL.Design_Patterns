@@ -1,6 +1,6 @@
 ﻿using System;
 using Design_Patterns.DoorFactory;
-using Design_Patterns.DoorMaker.WoodenDoors;
+using Design_Patterns.DoorMakers.WoodenDoors;
 
 namespace Design_Patterns
 {
@@ -13,10 +13,15 @@ namespace Design_Patterns
             var woodenDoor = woodenDoorFactory.MakeDoor();
             var woodenDoorFittingExpert = woodenDoorFactory.MakeFittingExpert();
             var battenedWoodenDoor = new BattenedWoodenDoor();
+            var frenchDecorated = new FrenchBattenedDoor(battenedWoodenDoor);
 
             battenedWoodenDoor.GetDescription();
+            frenchDecorated.GetDescription();
+            Console.WriteLine();
+
             woodenDoor.GetDescription();
             woodenDoorFittingExpert.GetDescription();
+            Console.WriteLine();
 
             var ironDoorFactory = new IronDoorFactory();
 

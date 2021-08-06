@@ -1,7 +1,6 @@
-using System;
 using Design_Patterns.Door;
 
-namespace Design_Patterns.DoorMaker
+namespace Design_Patterns.DoorMakers
 {
     public abstract class Door : IDoor
     {
