@@ -2,11 +2,11 @@ using System;
 
 namespace Design_Patterns.DoorMakers.WoodenDoors
 {
-    class BattenedWoodenDoor : Door
+    class WroughtIronDoor : Door
     {
-        public BattenedWoodenDoor()
+        public WroughtIronDoor()
         {
-            _description = "Battened door";
+            _description = "Wrought door";
         }
 
         public override string Description => _description;
@@ -18,7 +18,7 @@ namespace Design_Patterns.DoorMakers.WoodenDoors
 
         public override void GetDescription()
         {
-            Console.WriteLine("This is a standard Battened Wooden door.");
+            Console.WriteLine("This is a standard Wrought Iron door.");
         }
     }
 }

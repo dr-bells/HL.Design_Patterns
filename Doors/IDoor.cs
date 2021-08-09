@@ -1,4 +1,4 @@
-namespace Design_Patterns.Door
+namespace Design_Patterns.Doors
 {
     public interface IDoor
     {

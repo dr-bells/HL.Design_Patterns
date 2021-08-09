@@ -1,12 +1,12 @@
 using System;
 
-namespace Design_Patterns.Door
+namespace Design_Patterns.Doors
 {
     class IronDoor : IDoor
     {
         public void GetDescription()
         {
-            Console.WriteLine("I am a iron door");
+            Console.WriteLine("This is an iron door!");
         }
     }
 }

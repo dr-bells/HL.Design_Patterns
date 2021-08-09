@@ -1,4 +1,4 @@
-using Design_Patterns.Door;
+using Design_Patterns.Doors;
 
 namespace Design_Patterns.DoorMakers
 {

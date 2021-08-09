@@ -1,4 +1,3 @@
-
 namespace Design_Patterns.DoorMakers
 {
     public class DoorMaker
